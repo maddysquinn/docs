@@ -52,7 +52,7 @@ The following are examples of channels that are all part of the 'customer' names
 * customer:tracking-id
 * customer:order:update
 
-Namespaces can be used to apply operations to all channels within the namespace, such as "capabilities":/auth/capabilities, "channel rules":#rules and "integration rules":/general/integrations.
+Namespaces can be used to apply operations to all channels within the namespace, such as "capabilities":/auth/capabilities, "channel rules":#rules and "integration rules":/general/integrations. Namespaces don't need to be defined for a set of channels to be referred to in a capability. A resource specifier of foo:* (a glob expression) matches channel name foo:bar, even without foo namespace.
 
 <aside data-type='note'>
 <p>Restrictions for channel names and namespaces:</p>
@@ -61,6 +61,7 @@ Namespaces can be used to apply operations to all channels within the namespace,
 <li>Exclude whitespace and wildcards, such as @*@</li>
 <li>Use the correct case, whether it be uppercase or lowercase</li></ul>
 <p>While Ably doesn't limit channel name and namespace length, be aware that the name appears in REST request URLs. Most browsers cap URLs at 2048 characters</p>
+<p>Namespaces don't need to be defined for a set of channels to be referred to in a capability. A resource specifier of foo:* (a glob expression) matches channel name foo:bar, even without foo namespace.</p>
 </aside>
 
 h2(#create). Create or retrieve a channel
