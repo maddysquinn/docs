@@ -15,6 +15,7 @@ languages:
   - objc
   - csharp
   - go
+  - flutter
 redirect_from:
   - /api/versions/v1.1/rest-sdk/types
   - /api/versions/v1.0/rest-sdk/types
